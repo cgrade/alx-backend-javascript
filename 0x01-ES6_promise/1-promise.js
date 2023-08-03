@@ -3,5 +3,5 @@ export default function getFullResponseFromAPI(success) {
   if (success === true) {
     return Promise.resolve(obj);
   }
-  return Promise.reject(new Error('The fake API is not working correctly'));
+  return Promise.reject(new Error('The fake API is not working currently'));
 }

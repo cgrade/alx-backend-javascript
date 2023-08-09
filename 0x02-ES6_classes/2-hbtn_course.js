@@ -32,7 +32,7 @@ export default class HolbertonCourse {
     return this._students;
   }
 
-  set studnets(students) {
+  set students(students) {
     if (!Array.isArray(students)) throw new TypeError('students must be Array');
     this._students = students;
   }

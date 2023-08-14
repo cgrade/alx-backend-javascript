@@ -6,5 +6,5 @@ export default function createInt8TypedArray(length, position, value) {
   } catch (err) {
     throw new Error('Position outside range');
   }
-  return ar;
+  return dv;
 }

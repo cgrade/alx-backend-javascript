@@ -1,1 +1,3 @@
-# This is the solutions to project tasks on Node_JS Basics
+#0x12. NodeJS Basics
+
+## Specializations - Web Stack programming ― Back-end

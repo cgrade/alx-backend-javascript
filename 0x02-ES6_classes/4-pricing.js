@@ -1,29 +1,27 @@
-/* eslint no-underscore-dangle: 0 */
-
 export default class Pricing {
   constructor(amount, currency) {
     this._amount = amount;
     this._currency = currency;
   }
 
+  set amount(amount) {
+    this._amount = amount;
+  }
+
   get amount() {
     return this._amount;
   }
 
-  set amount(val) {
-    this._amount._amount = val;
+  set currency(currency) {
+    this._currency = currency;
   }
 
   get currency() {
     return this._currency;
   }
 
-  set currency(val) {
-    this._currency = val;
-  }
-
   displayFullPrice() {
-    return `${this._amount} ${this._currency.displayFullCurrency()}`;
+    return `${this.amount} ${this.currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, conversionRate) {

@@ -1,5 +1,3 @@
-/* eslint no-underscore-dangle: 0 */
-
 export default class Car {
   constructor(brand, motor, color) {
     this._brand = brand;
@@ -8,6 +6,11 @@ export default class Car {
   }
 
   cloneCar() {
-    return new this.constructor();
+    const origin = this;
+    return Object.assign(Object.create(Object.getPrototypeOf(origin)), {
+      _brand: undefined,
+      _motor: undefined,
+      _color: undefined,
+    });
   }
 }

@@ -1,1 +1,3 @@
-# Hello There this is a readme file for JavaScript ES6 Classes and Protoypes.
+#0x10. ES6 classes
+ 
+## Specializations - Web Stack programming ― Back-end
